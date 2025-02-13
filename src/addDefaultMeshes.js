@@ -13,16 +13,12 @@ const loader = new TextureLoader()
 
 //example function using textures and mesh physical material
 export const addTexturedMesh = () => {
-	color === map
-	//const color = loader.load('Ice_001_COLOR.jpg')
-	//const normal = loader.load('Ice_001_NRM.jpg')
-	//const displace = loader.load('Ice_001_DISP.png')
-	//const ambientOcclusion = loader.load('Ice_001_0CC.jpg')
-
-	const color = loader.load('Metal_007_basecolor.png')
-	const normal = loader.load('Metal_007_normal.png')
-	const displace = loader.load('Metal_007_height.png')
-	const ambientOcclusion = loader.load('Metal_007_ambientOcclusion.png')
+	//color === map
+	const color = loader.load('Ice_001_COLOR.jpg')
+	const normal = loader.load('Ice_001_NRM.jpg')
+	const displace = loader.load('Ice_001_DISP.png')
+	const ambientOcclusion = loader.load('Ice_001_0CC.jpg')
+	
 	const sphere = new SphereGeometry(0.75, 100, 100)
 	const sphereMaterial = new MeshPhysicalMaterial({
 		map: color,
